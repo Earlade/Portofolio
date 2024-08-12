@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        font-family: inter;
+        color: #28282b;
+        background-color: #fffdfa;
+        overflow-x: hidden;
+      }
+      main {
+        max-width: 1440px;
+        width: 100vw;
+        height: 100vh;
+        padding-left: 50px;
+        padding-right: 50px;
+        display: grid;
+        grid-template-rows: 70px auto;
+        transition: background-color 0.5s;
+      }
+      header {
+        display: flex;
+        align-items: center;
+      }
+      .navbar {
+        font-size: 19px;
+        display: flex;
+        flex-direction: row;
+        gap: 18px;
+      }
+      .navbar .word {
+        transition: background-color 0.5s, font-weight 0.5s;
+      }
+      .navbar .nav {
+        text-decoration: none;
+        font-weight: 450;
+        border-bottom: none;
+      }
+      .lightmode {
+        color: #28282b;
+        background-color: #fffdfa;
+      }
+      .darkmode {
+        color: #fffdfa;
+        background-color: #28282b;
+      }
+      .navbar .nav:hover {
+        font-weight: 800;
+      }
+      .navbar .active {
+        font-weight: 800;
+        text-decoration: none;
+        border-bottom: 2px solid #28282b;
+      }
+      .navbar .active-light {
+        border-bottom: 2px solid #28282b;
+      }
+      .navbar .active-dark {
+        border-bottom: 2px solid #fffdfa;
+      }
+      .to-darkmode {
+        margin-top: -6px;
+        margin-left: 4px;
+        font-size: 25px;
+      }
+      .to-lightmode {
+        margin-top: -4px;
+        font-size: 25px;
+      }
+      content {
+        max-height: calc(1024px - 70px);
+        width: 100%;
+        height: calc(100vh - 70px);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
